@@ -1,0 +1,28 @@
+.Statementscreener__menu{
+    display: flex;
+}
+.Statementscreener__menu > div{
+    margin: 5px;
+}
+.MuiFormControl-root{
+    border: 1px solid rgb(209, 212, 220) !important;
+    border-radius: 3px;
+}
+.MuiSelect-select.MuiSelect-select{
+    color: rgb(209, 212, 220) !important;
+    padding: 5px 15px !important;
+    padding-right: 20px !important;
+}
+.MuiSvgIcon-root.MuiSelect-icon{
+    color: rgb(209, 212, 220) !important;
+}
+.Statementscreener__screener{
+    overflow: auto;
+    height: 82%;
+}
+.Statement__rowheader{
+    width: 230px;
+}
+.Statement__rowData{
+    padding: 0px 3px;
+}

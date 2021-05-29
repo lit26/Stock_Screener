@@ -1,0 +1,16 @@
+.Statcolumn{
+    display:flex;
+    overflow: auto;
+}
+.Statcolumn__label{
+    padding:3px;
+}
+.Statcolumn__data{
+    width: 100px;
+}
+.Statcolumn__label{
+    width: 100px;
+}
+.Statcolumn__4 .Statcolumn__label{
+    width: 120px;
+}

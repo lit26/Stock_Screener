@@ -1,0 +1,30 @@
+.Screenertable{
+    overflow:auto;
+    font-size: 13px;
+    height: 81%;
+}
+th.Screenertable__col{
+    cursor: pointer
+}
+.Screenertable__header, .Screenertable__cell{
+    display: flex;
+}
+.Screenertable__col.w-34{
+    width: 34px;
+}
+.Screenertable__col.w-50{
+    width: 50px;
+}
+.Screenertable__col.w-80{
+    width: 80px;
+}
+.Screenertable__col.w-100{
+    width: 100px;
+}
+.Screenertable__col.w-200{
+    width: 200px;
+}
+.Screenertable__col svg{
+    height: 12px !important;
+    cursor: pointer;
+}

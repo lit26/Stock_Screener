@@ -1,0 +1,34 @@
+.Finvizscreener__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Finvizscreener__setting{
+    display:flex;
+    align-items: center
+}
+.FilterSetting{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.Screener__filter{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    overflow-y: auto;
+}
+.FilterSelect div{
+    width: 100%;
+}
+.FilterSelect{
+    width: 190px;
+    margin: 5px;
+}
+.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated{
+    color: rgb(209, 212, 220) !important;
+    font-size: 12px;
+}
+.Finvizscreener__pagination svg{
+    height: 11px !important;
+    cursor: pointer;
+}

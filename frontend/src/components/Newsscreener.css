@@ -1,0 +1,13 @@
+.Newsscreener{
+    overflow: auto;
+}
+.Newsscreener__date{
+    width: 100px;
+}
+.Newsscreener__row a{
+    color: rgb(209, 212, 220);
+    text-decoration: none;
+}
+.Newsscreener__row a:hover{
+    color: #787b86;
+}

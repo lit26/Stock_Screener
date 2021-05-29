@@ -1,0 +1,21 @@
+.TaButton{
+    margin: 3px 5px;
+    border-radius: 4px;
+    color: rgb(209, 212, 220);
+    border: 1px solid rgb(209, 212, 220);
+    padding: 4px 12px;
+    cursor:pointer;
+}
+.Technicalfunc__indicators{
+    display:flex;
+}
+.Technicalfunc__indicators > div{
+    padding: 10px;
+}
+.Technicalfunc__overlay > div:hover, .Technicalfunc__oscillator > div:hover{
+    color: #555;
+    cursor: pointer;
+}
+.Technicalfunc__active{
+    color: #555;
+}

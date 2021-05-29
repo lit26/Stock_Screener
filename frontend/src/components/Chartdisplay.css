@@ -1,0 +1,25 @@
+.Chartdisplay{
+    padding: 3px;
+}
+.Chartdisplay__menu{
+    display: flex;
+}
+.Tickerinput{
+    height: 26px;
+    margin: 3px 5px;
+    color: rgb(209, 212, 220);
+    background-color: rgb(30, 34, 45);
+    border: 1px solid rgb(209, 212, 220);
+    border-radius: 4px;
+    padding: 1px 3px;
+}
+.Menu__dropdown{
+    width: 60px;
+    height: 20px;
+    margin: 4px;
+}
+.Chartdisplay__menu .MuiFormControl-root{
+    margin: 3px 5px !important;
+    border-radius: 4px;
+    color: rgb(209, 212, 220) !important;;
+}

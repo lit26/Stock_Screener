@@ -1,0 +1,31 @@
+.Portfolioscreener__screener{
+    overflow: auto;
+    height: calc(100% - 45px);
+}
+.Portfolioscreener{
+    overflow: auto;
+}
+.Portfolioscreener__action{
+    display: flex;
+}
+.Portfolioscreener__action div{
+    padding: 5px 15px;
+    border: 1px solid rgb(209, 212, 220);
+    margin: 5px;
+    cursor: pointer;
+}
+.Portfolioscreener__index{
+    width: 25px !important;
+}
+.Portfolioscreener td{
+    padding: 0px 3px;
+    width: 80px;
+}
+.Portfolioscreener__action svg{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.Portfoliomodal .MuiTypography-colorTextSecondary{
+    color:rgb(209, 212, 220)
+}

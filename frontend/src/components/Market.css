@@ -1,0 +1,21 @@
+.Market{
+    padding: 0px 5px;
+    border-bottom: 7px solid #222838;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+.Market__table{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.Market table{
+    width: 100%;
+}
+.Market__header{
+    text-align: left;
+}
+.MarketRow:hover{
+    background-color: #222838;
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+body {
+  background-color: #222838;
+  color: rgb(209, 212, 220);
+  font-family: Trebuchet MS, roboto, ubuntu, sans-serif;
+  margin: 0px;
+}
+.App {
+  display: flex;
+}
+.App > div {
+  margin: 3px;
+  background-color: rgb(19, 23, 34);
+  height: 99vh;
+  min-height: 700px;
+}
+.App__leftPanel{
+  display: flex;
+  flex-direction: column;
+}
+.App__rightPanel {
+  width: 300px;
+}
+.App__leftPanel {
+  flex-grow: 1;
+  width: 60%;
+}
+.App__leftPanel > div:nth-child(1) {
+  height:75%;
+  border-bottom: 7px solid #222838;
+}
+.App__leftPanel > div:nth-child(2) {
+  height:30%;
+}
+.App__rightPanel > div{
+  height: 48%;
+}
+.Value__up{
+  color: #26a69a;
+}
+.Value__down{
+  color: #f44336;
+}
+.Valuebackground__up{
+  background-color: #26a69a;
+}
+.Valuebackground__down{
+  background-color: #f44336;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

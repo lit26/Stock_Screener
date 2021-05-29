@@ -1,0 +1,33 @@
+.Infoscreener{
+    display: flex;
+    flex-direction: column;
+}
+
+.Infoscreener__menu{
+    display:flex;
+    overflow:auto;
+    margin: 3px;
+    border-bottom: 3px solid #222838;
+    width: 99%;
+}
+.Infoscreener__menu > div{
+    height: 20px;
+    padding: 5px 15px;
+    margin: 2px;
+    border: 1px solid rgb(209, 212, 220);
+}
+.Infoscreener__menu > div:hover{
+    cursor: pointer;
+    background-color: #222838;
+}
+.Infoscreener__screener{
+    flex-grow: 1;
+    padding: 10px;
+    height: calc(25% - 40px);
+}
+.Infoscreener__screener > div{
+    height: 95%;
+}
+.Infoscreener tr:nth-child(even){
+    background-color: #222838;
+}
