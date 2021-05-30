@@ -202,6 +202,7 @@ def rsi_plot(df):
         'name': 'lower band',
         'dashStyle': 'dot',
         'data': [[data_date[i], 30] for i in range(len(df))],
+        'enableMouseTracking': False,
         'yAxis': 2
         },{
         'type':'line',
@@ -209,6 +210,7 @@ def rsi_plot(df):
         'name': 'upper bands',
         'dashStyle': 'dot',
         'data': [[data_date[i], 70] for i in range(len(df))],
+        'enableMouseTracking': False,
         'yAxis': 2
     }]
     return oscillators
