@@ -1,5 +1,5 @@
 pandas==1.2.3
-finvizfinance==0.9.8
+finvizfinance==0.11.1
 ta==0.7.0
 Django==3.2
 yfinance==0.1.55

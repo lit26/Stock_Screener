@@ -1,5 +1,5 @@
 import pandas as pd
-from finvizfinance.util import webScrap, numberCovert, NUMBER_COL, util_dict
+from finvizfinance.util import web_scrap, number_covert, NUMBER_COL, util_dict
 
 BASE_URL = 'https://finviz.com/screener.ashx?v={screener}{filter}&ft=4&o={order}&r={row}'
 FILTER_DICT = util_dict['filter']
@@ -44,7 +44,7 @@ def screener_helper(rows, num_col_index, table_header):
             if i not in num_col_index:
                 info_dict[table_header[i]] = col.text
             else:
-                info_dict[table_header[i]] = numberCovert(col.text)
+                info_dict[table_header[i]] = number_covert(col.text)
         df = df.append(info_dict, ignore_index=True)
     return df
 
@@ -82,7 +82,7 @@ def get_screener(screener, filters=None, order='ticker', page=1, ascend=True):
     url = BASE_URL.format(screener=screener_code, filter=url_filter, order=url_order, row=url_row)
     
     # scrap website
-    soup = webScrap(url)
+    soup = web_scrap(url)
     page = len(soup.findAll('table')[17].findAll('option'))
     if page == 0:
         print('No information found.')

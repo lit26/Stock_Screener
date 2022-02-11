@@ -70,16 +70,15 @@ def get_current_market(ticker):
     else:
         print('[Info] Fetch from finvizfinance')
         stock = finvizfinance(ticker)
-        stock_info = stock.TickerFundament(raw=False)
-        stock_info['desp'] = stock.TickerDescription()
-        stock_news = stock.TickerNews()
+        stock_info = stock.ticker_fundament(raw=False)
+        stock_info['desp'] = stock.ticker_description()
+        stock_news = stock.ticker_news()
         info = {
             "fundament": stock_info,
             "news": stock_news.to_dict(orient="records"),
         }
         fundamental_cache.cache(ticker, info)
         stock_fundament = stock_info
-    
     return {
         "ticker": ticker,
         "current": stock_fundament['Price'],
@@ -102,9 +101,9 @@ def get_ticker_fundament(ticker):
     else:
         print('[Info] Fetch from finvizfinance')
         stock = finvizfinance(ticker)
-        stock_info = stock.TickerFundament(raw=False)
-        stock_info['desp'] = stock.TickerDescription()
-        stock_news = stock.TickerNews()
+        stock_info = stock.ticker_fundament(raw=False)
+        stock_info['desp'] = stock.ticker_description()
+        stock_news = stock.ticker_news()
         info = {
             "fundament": stock_info,
             "news": stock_news.to_dict(orient="records"),
@@ -124,7 +123,7 @@ def get_ticker_statement(ticker, statement, timeframe):
     Returns:
         info(dict): single ticker fundament information and news.
     '''
-    df = Statements().getStatements(ticker, statement, timeframe)
+    df = Statements().get_statements(ticker, statement, timeframe)
     statement_info = df.to_dict('index')
     for k, v in statement_info.items():
         statement_info[k] = list(v.values())
@@ -153,7 +152,7 @@ def validate_stock(stock):
 
 def get_portfolio(portfolio):
     for i, holding in enumerate(portfolio):
-        holding['price'] = float(Quote().getCurrent(holding['ticker']))
+        holding['price'] = float(Quote().get_current(holding['ticker']))
         holding['return'] = (holding['price'] - holding['cost']) * holding['shares']
         holding['pct'] = (holding['price'] - holding['cost'])*100 / holding['cost']
         holding['equity'] = holding['price'] * holding['shares']

@@ -33,6 +33,7 @@ class TickersView(views.APIView):
         tickers = request.data['tickers']
         watchlist = []
         for ticker in tickers:
+            print(get_current_market(ticker))
             watchlist.append(get_current_market(ticker))
         return Response(watchlist)
 
